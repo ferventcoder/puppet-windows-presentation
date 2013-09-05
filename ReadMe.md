@@ -33,3 +33,4 @@ The presentation is in keynote but there are other formats in the `Presentation`
  1. Call `vagrant up --no-provision` to bring the box back up.
  1. Now we are ready to grab a snapshot from which to start from `vagrant sandbox on`
  1. In `Demo/Vagrantfile` please comment out the shell provisioner and uncomment the puppet provisioner that you commented out in step 1.
+ 1. This is it for exercise 0.
