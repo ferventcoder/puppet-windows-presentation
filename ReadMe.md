@@ -17,7 +17,7 @@ Puppet On Windows
  1. Install/upgrade required plugins for vagrant (if using VMWare you will need the non-free vagrant-vmware-fusion or equivalent).
  1. Install/upgrade vagrant-windows vagrant plugin. Open terminal/command line, head to the directory where the plugin is `vagrant plugin install vagrant-windows-1.2.0.gem`
  1. Install/upgrade `sahara` vagrant plugin - `vagrant plugin install sahara`.
- 1. Download [Sql Server Express Installer](http://download.microsoft.com/download/8/D/D/8DD7BDBA-CEF7-4D8E-8C16-D9F69527F909/ENU/x64/SQLEXPRWT_x64_ENU.exe) to `Demo/resources/SQLServer/SQLEXPRWT_x64_ENU.exe`. It's about 230 MB so it might take a minute.
+ 1. Download [Sql Server Express 2012 Installer](http://download.microsoft.com/download/8/D/D/8DD7BDBA-CEF7-4D8E-8C16-D9F69527F909/ENU/x64/SQLEXPRWT_x64_ENU.exe) to `Demo/resources/SQLServer/SQLEXPRWT_x64_ENU.exe`. It's about 230 MB so it might take a minute.
 
 ## Presentation
 
