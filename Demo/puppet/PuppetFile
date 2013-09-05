@@ -6,6 +6,8 @@ mod 'joshcooper/powershell'
 
 mod 'puppetlabs/registry'
 
+mod 'puppetlabs/dism'
+
 mod 'rismoney/chocolatey',
   :git => 'git://github.com/ferventcoder/puppet-chocolatey.git',
   :ref => "all_the_things"
