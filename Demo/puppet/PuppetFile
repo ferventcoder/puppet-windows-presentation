@@ -1,4 +1,4 @@
-# Configuration for librarian-puppet.
+# Configuration for librarian-puppet
 
 forge "http://forge.puppetlabs.com"
 
