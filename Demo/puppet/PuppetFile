@@ -12,6 +12,4 @@ mod 'rismoney/chocolatey',
   :git => 'git://github.com/ferventcoder/puppet-chocolatey.git',
   :ref => "all_the_things"
 
-mod 'joshcooper/puppetlabs-reboot',
-  :git => 'https://github.com/ferventcoder/puppetlabs-reboot.git',
-  :ref => "master"
+mod 'puppetlabs/reboot'
