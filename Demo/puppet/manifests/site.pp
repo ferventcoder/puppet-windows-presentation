@@ -1,7 +1,6 @@
 # default signifies all nodes (aka agents)
 node default {
 
-
   file { 'c:/temp':
     ensure => 'directory',
     notify => File['c:/temp/testfile.txt'],
@@ -67,12 +66,11 @@ node default {
   #   source => 'c:/vagrant/resources/SQLServer/SQLEXPRWT_x64_ENU.exe',
   #   install_options => '/QS /INDICATEPROGRESS /ACTION=Install /FEATURES=SQL,Tools /TCPENABLED=1 /INSTANCENAME=MSSQLServer/SQLExpress /SQLSVCACCOUNT=`"NT AUTHORITY\Network Service`" /SQLSYSADMINACCOUNTS=Administrators /AGTSVCACCOUNT=`"NT AUTHORITY\Network Service`" /IACCEPTSQLSERVERLICENSETERMS',
   #   require => Package['vcredist2008'],
-  # } 
+  # }
   #  ->
   # service { 'MSSQL$SQLEXPRESS':
   #   ensure => 'running',
   #   enable => true,
   # }
-
 
 }
