@@ -1,19 +1,5 @@
 $env:PATH +=";$env:SystemDrive\Chocolatey\bin"
 
-# cinst ruby -version 1.9.3.44800
-# Write-Host 'Attempting to add Ruby to the PATH'
-# $env:PATH +=";$env:SystemDrive\ruby193\bin"
-
-# Write-Host "Ensuring puppet"
-# try {
-#     $ErrorActionPreference = "Stop";
-#     Get-Command puppet
-# } catch {
-#     Write-Host "Installing puppet"
-#     & gem install puppet --no-ri --no-rdoc
-# } finally {
-#     $ErrorActionPreference = "Continue";
-# }
 
 $resourcesPath = 'c:\vagrant\resources'
 $pkgFile = get-childitem $resourcesPath -recurse -include 'puppet.*.nupkg' | select -First 1
