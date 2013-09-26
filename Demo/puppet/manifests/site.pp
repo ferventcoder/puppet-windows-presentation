@@ -7,7 +7,7 @@ node default {
   }
 
   file { 'c:/temp/testfile.txt':
-    ensure => absent,
+    ensure => 'file',
     content => 'Test file',
   }
 
