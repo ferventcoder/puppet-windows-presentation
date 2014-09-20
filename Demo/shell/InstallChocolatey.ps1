@@ -3,7 +3,6 @@ $ChocoInstallPath = "$env:SystemDrive\Chocolatey\bin"
 # Put chocolatey on the MACHINE path, vagrant does not have access to user environment variables
 $envPath = $env:PATH
 if (!$envPath.ToLower().Contains($ChocoInstallPath.ToLower())) {
-
     Write-Host "PATH environment variable does not have `'$ChocoInstallPath`' in it. Adding..."
     $ActualPath = [Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::Machine)
     $StatementTerminator = ";"
@@ -17,15 +16,15 @@ if (!$envPath.ToLower().Contains($ChocoInstallPath.ToLower())) {
 $env:Path += ";$ChocoInstallPath"
 
 if (!(Test-Path $ChocoInstallPath)) {
-    # Install chocolatey
-    iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
+  # Install chocolatey
+  iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
 }
 
-$resourcesPath = 'c:\vagrant\resources'
-$chocoPkgFile = get-childitem $resourcesPath -recurse -include 'chocolatey.*.nupkg' | select -First 1
+# $resourcesPath = 'c:\vagrant\resources'
+# $chocoPkgFile = get-childitem $resourcesPath -recurse -include 'chocolatey.*.nupkg' | select -First 1
 
-if ($chocoPkgFile -ne $null) {
-    cinst chocolatey -pre -force -source "$resourcesPath"
-} else {
-    cinst chocolatey -pre
-}
+# if ($chocoPkgFile -ne $null) {
+#     cinst chocolatey -pre -force -source "$resourcesPath"
+# } else {
+#     cinst chocolatey -pre
+# }

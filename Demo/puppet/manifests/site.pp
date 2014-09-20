@@ -10,6 +10,10 @@ node default {
     ensure => 'file',
     content => 'Test file',
   }
+  package {'putty':
+    ensure => '0.62',
+    provider => chocolatey,
+  }
 
   package {'roundhouse':
     ensure => latest,
@@ -44,7 +48,7 @@ node default {
     data => "Just a key for testing",
   }
 
-  dism {'NetFx3':
+  dism {'NetFx4':
     ensure => present,
     notify => Reboot['reboot_netfx'],
   }
@@ -55,6 +59,9 @@ node default {
     timeout => 5,
   }
 
+  user {'Administrator':
+    ensure => present,
+  }
 
     #notify => Package['Microsoft SQL Server 2012 (64-bit)'],
   #}
