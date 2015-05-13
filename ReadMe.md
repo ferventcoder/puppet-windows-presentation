@@ -3,19 +3,19 @@ Puppet On Windows
 
 ## Prerequisites
 
- * [Vagrant 1.5.4](http://downloads.vagrantup.com/tags/v1.2.7)
+ * [Vagrant 1.5.4](http://downloads.vagrantup.com/tags/v1.5.4) or greater.
  * [VirtualBox 4.2.16](https://www.virtualbox.org/wiki/Downloads) or VMWare Fusion 5
     * If you want to use VMWare Fusion you will also need the vagrant-vmware-fusion plugin for vagrant (which is not free). You also want the latest version (at least 0.8.5).
- * Vagrant-Windows 1.2.0 - included here in SetupFiles directory
+ * Vagrant-Windows
  * At least 20GB free on the host box.
- * Vagrant Sahara plugin for sandboxing
+ * Vagrant Sahara plugin for sandboxing.
 
 ## Setup
 
- 1. Install/upgrade Vagrant to 1.2.7.
+ 1. Install/upgrade Vagrant to 1.5.4.
  1. Install/upgrade VirtualBox/VMWare to versions listed above.
  1. Install/upgrade required plugins for vagrant (if using VMWare you will need the non-free vagrant-vmware-fusion or equivalent).
- 1. Install/upgrade vagrant-windows vagrant plugin. Open terminal/command line, head to the directory where the plugin is `vagrant plugin install vagrant-windows-1.2.0.gem`
+ 1. Vagrant 1.5.4 (and below) - Install/upgrade vagrant-windows vagrant plugin. Open terminal/command line and type `vagrant plugin install vagrant-windows`
  1. Install/upgrade `sahara` vagrant plugin - `vagrant plugin install sahara`.
  1. Download [Sql Server Express 2012 Installer](http://download.microsoft.com/download/8/D/D/8DD7BDBA-CEF7-4D8E-8C16-D9F69527F909/ENU/x64/SQLEXPRWT_x64_ENU.exe) to `Demo/resources/SQLServer/SQLEXPRWT_x64_ENU.exe`. It's about 230 MB so it might take a minute.
 
