@@ -9,7 +9,7 @@ case $operatingsystem {
 
 #include chocolatey_server
 
-windowsfeature {'NetFx4':
+windowsfeature {'NET-Framework-45-Core':
   ensure => present,
   notify => Reboot['reboot_netfx'],
 }
@@ -34,10 +34,13 @@ acl { 'c:/temp':
    { identity => 'Administrator', rights => ['full'] },
    { identity => 'Users', rights => ['modify'] }
  ],
+  purge => true,
+  inherit_parent_permissions => false,
 }
 
 service {'BITS':
   ensure => 'stopped',
+  #ensure => 'running',
   enable => 'manual',
 }
 
