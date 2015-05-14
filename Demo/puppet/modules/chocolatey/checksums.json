@@ -1,0 +1,18 @@
+{
+  "CHANGELOG.md": "2f2a5df27a2e9df4c42884d46096a177",
+  "CONTRIBUTING.md": "eef7907ffe89dee60ca4758d5b1d286c",
+  "Gemfile": "32579022d86b875acc3b351eab00170f",
+  "License": "5335066555b14d832335aa4660d6c376",
+  "README.md": "75ffb1c35efeebc75b6eb4be38cc87b2",
+  "Rakefile": "188652eaa79361ab4472fcb97b33d5d7",
+  "appveyor.yml": "8c327a9fdf09ce6a85af166822b26a80",
+  "lib/puppet/provider/package/chocolatey.rb": "3b734b2a2fc93a3754f40b6fe64ea5fa",
+  "manifests/config.pp": "cda31edb48298baa7a5bcd5d55c69e52",
+  "manifests/install.pp": "27e20c5c4367ab6cd9d89caae55462e0",
+  "manifests/params.pp": "2ad3f01d2313c217828b5836a2a640e5",
+  "metadata.json": "b4a5504ab4ce46528223d81e3fc6a80c",
+  "spec/spec_helper.rb": "e6494cee2364f2b0f31e793e73c5b3fe",
+  "spec/unit/chocolatey_spec.rb": "b5ccc1f7f0b0c7fec3e076c6f239f1c9",
+  "spec/unit/travis_spec.rb": "8838d87aa76de04ae40296d3f616bb58",
+  "tests/init.pp": "6ae8683b4a442031550aba6e8d3975e7"
+}

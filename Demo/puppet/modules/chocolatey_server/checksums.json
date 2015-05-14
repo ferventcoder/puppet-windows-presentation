@@ -1,0 +1,9 @@
+{
+  "CHANGELOG.md": "6f4e21bb3286a910399627d49df95f81",
+  "LICENSE": "47bbee59c4c1cb14cc3667035a227be0",
+  "README.md": "844574e2a27369b5c95337ebef50d1ec",
+  "Rakefile": "00b3c94c8f6ce87b27ffd6b5c53ba8d1",
+  "manifests/init.pp": "a801f6630dcc8e4c077a87bb9e8b487f",
+  "manifests/params.pp": "3923fca603d88c70f660ce14f9b80e77",
+  "metadata.json": "c78aafaee79203c40a215839b787463b"
+}

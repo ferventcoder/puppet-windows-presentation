@@ -1,0 +1,18 @@
+{
+  "CHANGELOG.md": "a4e82f95ddf81a0aa50c838f230cc91a",
+  "CONTRIBUTING.md": "d911815dd7d0d90b90bb35382a6e3298",
+  "Gemfile": "b7e8516f82d1f3a3ba932a94b569db78",
+  "LICENSE": "5d1d67d2ed40d59b127333aa755e7087",
+  "README.md": "1caba832e5fd4872afe074c42635c809",
+  "Rakefile": "f8ca8f8a88de0adc8002b5a93b9dd1d6",
+  "manifests/init.pp": "45aeb1a48e95d50a45b773e621986cb4",
+  "metadata.json": "982910650bec43052b65bd01eddf0008",
+  "spec/acceptance/nodesets/windows-2008R2-serverstandard-x64.yml": "2d70a16729d5ca9d1cc9b6d90bb1cf47",
+  "spec/acceptance/nodesets/windows-2012-serverstandard-x64.yml": "fc85ffc08dc835dc95080ff4d72336bd",
+  "spec/acceptance/nodesets/windows-2012R2-serverstandard-x64.yml": "c11b060480170484b6efc14b71d6c940",
+  "spec/acceptance/windowsfeature_spec.rb": "0e0694f5c0b4e98c2c5f221634bdc360",
+  "spec/defines/windowsfeature_spec.rb": "47fdd45747e8823939ac84173616e51c",
+  "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+  "spec/spec_helper_acceptance.rb": "acf8310d1d3724e18b96c72ea6c9b91d"
+}
