@@ -53,7 +53,7 @@ user {'Administrator':
 # http://docs.puppetlabs.com/references/latest/type.html#group
 group {'TestUsers':
   ensure => present,
-  members => ['Aministator','Administrators'],
+  members => ['Administrator','Administrators'],
 }
 
 
