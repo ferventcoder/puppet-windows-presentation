@@ -38,6 +38,7 @@ certutil -v -addstore Root "c:\vagrant\resources\certs\usertrust.network.pem"
 
 
 SET PATH=%PATH%;%SystemDrive%\Program Files (x86)\Puppet Labs\Puppet\bin;%SystemDrive%\Program Files\Puppet Labs\Puppet\bin;
+@powershell -NoProfile -ExecutionPolicy Bypass -File "c:\vagrant\shell\NotifyGuiAppsOfEnvironmentChanges.ps1"
 
 ::echo "Ensuring environment for puppet"
 ::call environment.bat

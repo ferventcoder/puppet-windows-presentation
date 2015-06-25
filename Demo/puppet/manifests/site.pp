@@ -1,6 +1,8 @@
 # default signifies all nodes (aka agents)
 node default {
 
+  #include chocolatey_server
+
   file { 'c:/temp':
     ensure => 'directory',
     notify => File['c:/temp/testfile.txt'],
@@ -13,13 +15,13 @@ node default {
   package {'putty':
     ensure => '0.62',
     provider => chocolatey,
+    source => 'c:\vagrant\resources\packages',
   }
 
   package {'roundhouse':
-    ensure => latest,
+    ensure => installed,
     provider => chocolatey,
     source => 'c:\vagrant\resources\packages',
-    #install_options => '-pre'
   }
 
   service {'BITS':
@@ -27,17 +29,17 @@ node default {
     enable => 'manual',
   }
 
-  package {'vcredist2008':
-    ensure => latest,
-    provider => chocolatey,
-    notify => Reboot['reboot_vcredist'],
-  }
+  # package {'vcredist2008':
+  #   ensure => latest,
+  #   provider => chocolatey,
+  #   notify => Reboot['reboot_vcredist'],
+  # }
 
-  reboot { 'reboot_vcredist':
-    message => "Rebooting for Redist",
-    when => pending,
-    timeout => 5,
-  }
+  # reboot { 'reboot_vcredist':
+  #   message => "Rebooting for Redist",
+  #   when => pending,
+  #   timeout => 5,
+  # }
 
   registry_key {'HKLM\System\TestKey':
     ensure => present,
@@ -48,16 +50,16 @@ node default {
     data => "Just a key for testing",
   }
 
-  dism {'NetFx4':
-    ensure => present,
-    notify => Reboot['reboot_netfx'],
-  }
+  # dism {'NetFx4':
+  #   ensure => present,
+  #   notify => Reboot['reboot_netfx'],
+  # }
 
-  reboot { 'reboot_netfx':
-    message => "Rebooting for Net Framework install",
-    when => pending,
-    timeout => 5,
-  }
+  # reboot { 'reboot_netfx':
+  #   message => "Rebooting for Net Framework install",
+  #   when => pending,
+  #   timeout => 5,
+  # }
 
   user {'Administrator':
     ensure => present,
