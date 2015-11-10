@@ -11,7 +11,7 @@ case $operatingsystem {
   'windows':    {
     Package {
       provider => chocolatey,
-      #source   => 'C:\vagrant\resources\packages',
+      source   => 'C:\vagrant\resources\packages',
     }
   }
 }
@@ -95,6 +95,7 @@ package {'roundhouse':
   ensure   => '0.8.5.0',
   #ensure => installed, # note that this produced no changes applied after an install
   #ensure => latest,
+  #ensure => held,
 }
 
 # https://forge.puppetlabs.com/puppetlabs/registry
