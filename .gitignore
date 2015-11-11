@@ -11,3 +11,4 @@ demo/resources/NetFx4
 Puppetfile.lock
 acceptance
 Demo/puppet/modules/*/spec
+Demo/puppet/modules/*/acceptance
