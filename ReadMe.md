@@ -47,7 +47,7 @@ Notes:
 ### Exercise 1 - Puppet apply
  1. Open up `Demo/puppet/manifests/provision.pp` and take a look at it.
  1. Run `vagrant provision`. Note the changes that are made.
- 1. Run `vagrant provision` again. Not that Puppet reports nothing changes.
+ 1. Run `vagrant provision` again. Note that Puppet reports nothing changes.
  1. Play around with some of the resources, making changes, running `vagrant provision` and note how they change the files on the system.
  1. Change things on the file system and note how Puppet fixes configuration drift automatically.
  1. This concludes Exercise 1.
