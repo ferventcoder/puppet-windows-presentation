@@ -158,7 +158,7 @@ Puppet::Type.type(:registry_value).provide(:registry) do
     begin
       hive.open(subkey, Win32::Registry::KEY_ALL_ACCESS | access) do |reg|
         ary = to_native(resource[:type], resource[:data])
-        reg.write(valuename, ary[0], ary[1])
+        write(reg, valuename, ary[0], ary[1])
       end
     rescue Win32::Registry::Error => detail
       error = case detail.code
@@ -171,6 +171,45 @@ Puppet::Type.type(:registry_value).provide(:registry) do
       end
       error.set_backtrace detail.backtrace
       raise error
+    end
+  end
+
+  def data_to_bytes(type, data)
+    bytes = []
+
+    case type
+      when Win32::Registry::REG_SZ, Win32::Registry::REG_EXPAND_SZ
+        bytes = wide_string(data).bytes.to_a
+      when Win32::Registry::REG_MULTI_SZ
+        # each wide string is already NULL terminated
+        bytes = data.map { |s| wide_string(s).bytes.to_a }.flat_map { |a| a }
+        # requires an additional NULL terminator to terminate properly
+        bytes << 0 << 0
+      when Win32::Registry::REG_BINARY
+        bytes = data.bytes.to_a
+      when Win32::Registry::REG_DWORD
+        # L is 32-bit unsigned native (little) endian order
+        bytes = [data].pack('L').unpack('C*')
+      when Win32::Registry::REG_QWORD
+        # Q is 64-bit unsigned native (little) endian order
+        bytes = [data].pack('Q').unpack('C*')
+      else
+        raise TypeError, "Unsupported type #{type}"
+    end
+
+    bytes
+  end
+
+  def write(reg, name, type, data)
+    from_string_to_wide_string(valuename) do |name_ptr|
+      bytes = data_to_bytes(type, data)
+      FFI::MemoryPointer.new(:uchar, bytes.length) do |data_ptr|
+        data_ptr.write_array_of_uchar(bytes)
+        if RegSetValueExW(reg.hkey, name_ptr, 0,
+          type, data_ptr, data_ptr.size) != 0
+            raise Puppet::Util::Windows::Error.new("Failed to write registry value")
+        end
+      end
     end
   end
 

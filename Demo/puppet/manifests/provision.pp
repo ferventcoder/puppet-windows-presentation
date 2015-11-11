@@ -11,7 +11,7 @@ case $operatingsystem {
   'windows':    {
     Package {
       provider => chocolatey,
-      source   => 'C:\vagrant\resources\packages',
+      #source   => 'C:\vagrant\resources\packages',
     }
   }
 }
@@ -21,11 +21,24 @@ case $operatingsystem {
 # puppet module install puppetlabs-windows
 
 
+#include chocolatey
+# or
+class {'chocolatey':
+  chocolatey_download_url => 'file:///C:/vagrant/resources/packages/chocolatey.0.9.9.11.nupkg',
+  use_7zip                => false,
+  log_output              => true,
+}
+
 # Exercise 2 - Chocolatey Simple Server
 #include chocolatey_server
+# or
+#class {'chocolatey_server':
+#  server_package_source => 'C:/vagrant/resources/packages',
+##Exercise 4 - Puppet Install of Updated Package
+#  #server_package_source => 'http://localhost/chocolatey',
+#}
 
 # Exercise 1 - Puppet apply
-
 # https://forge.puppetlabs.com/puppet/windowsfeature
 windowsfeature {'NET-Framework-45-Core':
   ensure => present,
@@ -48,6 +61,7 @@ file { 'c:/temp':
 # http://docs.puppetlabs.com/references/latest/type.html#user
 user {'Administrator':
   ensure => present,
+  notify => Group['TestUsers'],
 }
 
 # http://docs.puppetlabs.com/references/latest/type.html#group

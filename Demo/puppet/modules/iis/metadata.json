@@ -1,6 +1,6 @@
 {
   "name": "puppet-iis",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "author": "puppet-community",
   "summary": "Module that will manage IIS for windows server 2008 and above. It will help maintain application pools, sites and virtual applications",
   "license": "Apache 2.0",
@@ -17,8 +17,18 @@
       ]
     }
   ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
   "dependencies": [
-    {"name":"puppetlabs/stdlib","version_requirement":">= 3.0.0"},
-    {"name":"puppetlabs/powershell","version_requirement":">= 1.0.1"}
+    {"name":"puppetlabs/stdlib","version_requirement":">= 3.0.0 < 5.0.0"},
+    {"name":"puppetlabs/powershell","version_requirement":">= 1.0.1 < 2.0.0"}
   ]
 }

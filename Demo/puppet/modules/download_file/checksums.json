@@ -1,0 +1,17 @@
+{
+  "CHANGELOG.md": "c3f3a42f7e691270d23125b4c65c5772",
+  "CONTRIBUTING.md": "d911815dd7d0d90b90bb35382a6e3298",
+  "Gemfile": "b7e8516f82d1f3a3ba932a94b569db78",
+  "LICENSE": "5d1d67d2ed40d59b127333aa755e7087",
+  "README.md": "f8836a997f05078c9bbcfbbda9b9f64f",
+  "Rakefile": "f8ca8f8a88de0adc8002b5a93b9dd1d6",
+  "manifests/init.pp": "0dc95c172fcf9214e8f5327a88678700",
+  "metadata.json": "8ecd70cf4a7035810a387f8d24c5df5f",
+  "spec/acceptance/download_file_spec.rb": "d7919428bd27dcb527dca9dbd1135813",
+  "spec/acceptance/nodesets/windows-2008R2-serverstandard-x64.yml": "50219eac8138cc5d1018c8a8b0ff2cdb",
+  "spec/defines/download_file_spec.rb": "6e67be83b7cecf383008bac1e78c3a14",
+  "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+  "spec/spec_helper_acceptance.rb": "c73c7161bd803419d05185c812e4794e",
+  "templates/download.ps1.erb": "8e9065aef321832322d75409a5361b42"
+}

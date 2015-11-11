@@ -1,12 +1,15 @@
 {
   "name": "puppetlabs-registry",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "author": "puppetlabs",
   "summary": "This module provides a native type and provider to manage keys and values in the Windows Registry",
   "license": "Apache-2.0",
   "source": "git://github.com/puppetlabs/puppetlabs-registry.git",
   "project_page": "http://links.puppetlabs.com/registry-module",
   "issues_url": "https://github.com/puppetlabs/puppetlabs-registry/issues",
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">= 2.3.0"}
+  ],
   "operatingsystem_support": [
     {
       "operatingsystem": "Windows",
@@ -25,15 +28,12 @@
   "requirements": [
     {
       "name": "pe",
-      "version_requirement": "3.x"
+      "version_requirement": ">= 3.3.0 < 2015.3.0"
     },
     {
       "name": "puppet",
-      "version_requirement": ">= 3.3.0"
+      "version_requirement": ">= 3.3.0 < 5.0.0"
     }
   ],
-  "description": "This module provides a native type and provider to manage keys and values in the Windows Registry",
-  "dependencies": [
-    {"name":"puppetlabs/stdlib","version_requirement":">= 2.3.0"}
-  ]
+  "description": "This module provides a native type and provider to manage keys and values in the Windows Registry"
 }

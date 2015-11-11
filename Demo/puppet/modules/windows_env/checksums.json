@@ -1,0 +1,9 @@
+{
+  "CHANGELOG.md": "5047be389cfe07bb1bab34187e179687",
+  "LICENSE": "e092239e8c36c7a11965aabab642090d",
+  "README.md": "b63e4ad088e98594f99c0e2be7f7af2d",
+  "lib/puppet/provider/windows_env/windows_env.rb": "ac5471b507cf3ef954ee05a2002faecb",
+  "lib/puppet/type/windows_env.rb": "e02980a5503522b74aee5b6cd85ee832",
+  "metadata.json": "e9fc64634a8846ac07d70e43333e1345",
+  "tests/init.pp": "815b08b03557c428ef7d65ef81439403"
+}

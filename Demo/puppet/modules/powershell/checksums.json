@@ -1,11 +1,13 @@
 {
-  "CHANGELOG.md": "7903ab87d8c7c6d1f5a62d387eab071c",
-  "Gemfile": "be6bd0dbe4400bd57206a5af70ae0807",
+  "CHANGELOG.md": "3d74f55238731efc5452cbfb1e1263a2",
+  "CONTRIBUTING.md": "8d384cc10b0e2508da8e22b1ccc76678",
+  "Gemfile": "04fe0c48bfc534b5806f4489e32f4847",
   "LICENSE": "6089b6bd1f0d807edb8bdfd76da0b038",
-  "README.md": "b00968ab5b81dd537f6864c14e6da6f3",
+  "README.md": "c0b82c8d2b328c56da7c8120b0a94904",
   "Rakefile": "b7fa47f72583e517f019ab58f48853f2",
-  "lib/puppet/provider/exec/powershell.rb": "6cd041b40a8192ae0756893ae2b8525d",
-  "metadata.json": "e81631f2e9d439e3b8e4f17eebe3bab3",
+  "appveyor.yml": "b658769496520d0e4b50f0ee69d12e06",
+  "lib/puppet/provider/exec/powershell.rb": "8f8e56b1330af7cee215afdc4a1a80b6",
+  "metadata.json": "0ef172d00c55e1a1c148996e0a124e4a",
   "spec/acceptance/exec_powershell_spec.rb": "eb4fbbeee17bf7f4ae4bb512886fffe5",
   "spec/acceptance/files/param_script.ps1": "942dc0c5aaf3880732b610bdae165cba",
   "spec/acceptance/files/services.ps1": "6281d2a9de037d17514ba1618bc8d63f",
@@ -15,7 +17,8 @@
   "spec/acceptance/nodesets/windows-2008r2-x86_64.yml": "bf563a036e054f0f50cc271d6cd819e6",
   "spec/acceptance/nodesets/windows-2012-x86_64.yml": "678b95ea73e959c79d8723f35f66bc54",
   "spec/acceptance/nodesets/windows-2012r2-x86_64.yml": "f1f44c34a702307974dd1cff2909f402",
-  "spec/spec_helper.rb": "fc0ee3c4cbe0c9500c277602a8261d6e",
-  "spec/spec_helper_acceptance.rb": "1ad802468cf47371ecaf31a7e8c6278b",
-  "spec/unit/provider/exec/powershell_spec.rb": "df51bcf7778c6e42284f4c2a45c5c329"
+  "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+  "spec/spec_helper.rb": "c8cf5c2ac7ef761b821fee68707b6103",
+  "spec/spec_helper_acceptance.rb": "0dfff989f790d99d9a921b6662093887",
+  "spec/unit/provider/exec/powershell_spec.rb": "c9e4155a6aa2d04a20b602f21c9167d7"
 }

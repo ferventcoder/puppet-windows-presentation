@@ -1,9 +1,9 @@
 {
-  "CHANGELOG.md": "6f4e21bb3286a910399627d49df95f81",
+  "CHANGELOG.md": "eb1cdf2efba40286a086b80c0e2de269",
   "LICENSE": "47bbee59c4c1cb14cc3667035a227be0",
-  "README.md": "844574e2a27369b5c95337ebef50d1ec",
+  "README.md": "69600c9477809db29f43adb3617868e1",
   "Rakefile": "00b3c94c8f6ce87b27ffd6b5c53ba8d1",
-  "manifests/init.pp": "a801f6630dcc8e4c077a87bb9e8b487f",
-  "manifests/params.pp": "3923fca603d88c70f660ce14f9b80e77",
-  "metadata.json": "c78aafaee79203c40a215839b787463b"
+  "manifests/init.pp": "bcd01ad391ef2f490bb782f19fcd7859",
+  "manifests/params.pp": "20e34631a8f118ada00cfed8c6d3cdc5",
+  "metadata.json": "2393733a77a841b89b87cdea5f794bc9"
 }
