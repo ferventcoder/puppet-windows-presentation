@@ -78,6 +78,8 @@ Vagrant.configure("2") do |config|
   # We are going to let Puppet install Chocolatey instead.
   ##config.vm.provision :shell, :path => "shell/InstallChocolatey.ps1"
   config.vm.provision :shell, :path => "shell/InstallPuppetFromMSI.ps1"
+  # set up DSC
+  config.vm.provision :shell, :path => "shell/SetupDSCComponents.ps1"
 
   # If you really want to see some output, use this line instead
   #config.vm.provision :puppet, :options => ["--debug --trace --verbose"] do |puppet|
