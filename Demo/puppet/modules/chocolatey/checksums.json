@@ -1,5 +1,5 @@
 {
-  "CHANGELOG.md": "dc316db230ac716f9c6c40c5a096c274",
+  "CHANGELOG.md": "2fc8c7c2e5913c624323d94bccee47f0",
   "CONTRIBUTING.md": "eef7907ffe89dee60ca4758d5b1d286c",
   "Gemfile": "d17db320920195df1d67c63205f8cb9b",
   "License": "5335066555b14d832335aa4660d6c376",
@@ -14,7 +14,7 @@
   "manifests/init.pp": "e7296db402672660a754736f54cc6c22",
   "manifests/install.pp": "dc270a0038a839586423e37b0cfefdb3",
   "manifests/params.pp": "cb8d729f2503ab32c05d69e13f66c9ce",
-  "metadata.json": "718ab8836826f01559bfc6004ca5b39d",
+  "metadata.json": "2ca1aa435456e5bc4c454dad8512d38b",
   "spec/classes/config_spec.rb": "8e6bb682200b29e2d622fa1d20e2a382",
   "spec/classes/coverage_spec.rb": "5b6dfa0dd426aca0ccfae23c0a629f0b",
   "spec/classes/init_spec.rb": "25883185e08244b22bdfa1d12208b09f",

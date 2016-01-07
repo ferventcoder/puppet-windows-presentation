@@ -1,5 +1,5 @@
 {
-  "CHANGELOG.md": "c54669ed756cdea5ce68f96fdd38c325",
+  "CHANGELOG.md": "e51fca9e1f8f15f6b0e2396640dfc3b3",
   "CONTRIBUTING.md": "8d384cc10b0e2508da8e22b1ccc76678",
   "DEVELOPERS.md": "03a59096f18f6a46153f3b0f0caf7da1",
   "Gemfile": "124863a89e37d73f74cafa4758d0ed8a",
@@ -159,7 +159,7 @@
   "lib/puppet/type/acl.rb": "038f202218df42e682b0f6b2c3f9e946",
   "lib/puppet/util/monkey_patches.rb": "d36ea4119907b8105ad18a63ebafa006",
   "manifests/init.pp": "d04ff11c29460606d35bb119a0be4f47",
-  "metadata.json": "331c11c8f300a35cfb601ed1823710eb",
+  "metadata.json": "f9c3571748122f925fbebe51ab37cc3b",
   "spec/integration/provider/acl/windows_spec.rb": "b46fadee37d1527cc4c59149055cc411",
   "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
   "spec/spec_helper.rb": "bae4dfd05fdb324d57c13f7742161693",

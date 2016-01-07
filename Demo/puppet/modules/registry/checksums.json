@@ -1,7 +1,7 @@
 {
-  "CHANGELOG.md": "595d14c09691dbb0b9f7502c5d8ed718",
+  "CHANGELOG.md": "abfb79d97091555271638efe535f098b",
   "CONTRIBUTING.md": "8d384cc10b0e2508da8e22b1ccc76678",
-  "Gemfile": "124863a89e37d73f74cafa4758d0ed8a",
+  "Gemfile": "9dabae9a547d56c8ed0fe4c16db79643",
   "LICENSE": "6089b6bd1f0d807edb8bdfd76da0b038",
   "README.markdown": "2bd489141b39f0d59243802e34c2e117",
   "Rakefile": "619ffdb27351fa56442388f6a49dea4d",
@@ -34,7 +34,7 @@
   "lib/puppet_x/puppetlabs/registry.rb": "e81ba7665aedbd5cb519d75a4a8dbbd2",
   "manifests/service.pp": "242e54784e05917e372ae593910a1c04",
   "manifests/value.pp": "300351d284358f27c7607f734ece629f",
-  "metadata.json": "99a121024b5e44fa34247375ff1750a6",
+  "metadata.json": "9db494c6c798413afa9649b7e12a6570",
   "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
   "spec/spec_helper.rb": "a5cfc718afc61f97deeeccd642826d44",
   "spec/unit/puppet/provider/registry_key_spec.rb": "5736769797260d83844e788ede97dfdb",

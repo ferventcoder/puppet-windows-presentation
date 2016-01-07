@@ -45,6 +45,11 @@ windowsfeature {'NET-Framework-45-Core':
   notify => Reboot['reboot_netfx'],
 }
 
+exec { 'Write $env:PATH':
+  provider  => powershell,
+  logoutput => true
+}
+
 # https://forge.puppetlabs.com/puppetlabs/reboot
 reboot { 'reboot_netfx':
   message => "Rebooting for .Net Framework install",

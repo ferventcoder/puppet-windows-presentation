@@ -1,5 +1,5 @@
 {
-  "CHANGELOG.md": "4dd2d1679cce80aef2adca128a9b8dc7",
+  "CHANGELOG.md": "36c050a320a1be8f7df18242b17b19aa",
   "CONTRIBUTING.md": "8d384cc10b0e2508da8e22b1ccc76678",
   "Gemfile": "b0809371335554ad14e54e76a315b10d",
   "LICENSE": "19cbd64715b51267a47bf3750cc6a8a5",
@@ -50,14 +50,14 @@
   "appveyor.yml": "878f16e749eb606b8e5c7b8353a8ee64",
   "lib/puppet/provider/reboot/linux.rb": "0ceacacc65a8318a5d97bdf851203009",
   "lib/puppet/provider/reboot/posix.rb": "eca8e6aec3ef4c0bea7b31ddefc78073",
-  "lib/puppet/provider/reboot/windows.rb": "1ed2a8c1d84796fc5fd41984c2ff262b",
+  "lib/puppet/provider/reboot/windows.rb": "9e3045e17848971dc231431630e8f7fd",
   "lib/puppet/type/reboot.rb": "951ea6bfaa10a5274e7f5cac29ee1ce1",
-  "metadata.json": "6499ad5c1ec730e5fe098e38ca6bf8ca",
+  "metadata.json": "e75a7b243ff96c1760611a34fa2974b6",
   "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
   "spec/spec_helper.rb": "ade03bbd5a95a89c3ee837794d3f716a",
   "spec/unit/provider/reboot/linux_spec.rb": "a5d4ed6860a59b38b8f9e86ec415cb29",
   "spec/unit/provider/reboot/posix_spec.rb": "dc1f29b86d3d01482f9c4d900bb7393c",
-  "spec/unit/provider/reboot/windows_spec.rb": "b04c849ff22694969d01257bdcea888e",
+  "spec/unit/provider/reboot/windows_spec.rb": "3a1e05730163da2d6bca21b6cdaeaf96",
   "spec/unit/type/reboot_spec.rb": "2f644da9ba57b36f3fd51d84c8161a71",
   "tests/sample.pp": "3f6a07ad596cb01a1868d6a02a664395"
 }

@@ -37,7 +37,7 @@ class chocolatey_server (
 
   # package install
   package {'chocolatey.server':
-    ensure    => latest,
+    ensure    => installed,
     provider  => chocolatey,
     source    => $_server_package_url,
   } ->
