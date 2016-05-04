@@ -15,12 +15,12 @@ In the `Presentation` directory. You will need Keynote or something that can ope
  * Vagrant Sahara plugin for sandboxing.
 
 ## Demo - System Setup
- 1. Install/upgrade Vagrant to 1.5.4 or greater. I recommend 1.6.5 or any version of Vagrant at or past the `.z` of `3` (as in `1.7.3`).
+ 1. Install/upgrade Vagrant to 1.5.4 or greater. I recommend 1.8.x or any version of Vagrant at or past the `.z` of `3` (as in `1.7.3`).
  1. Install/upgrade VirtualBox/VMWare to versions listed above.
  1. Install/upgrade required plugins for vagrant (if using VMWare you will need the non-free vagrant-vmware-fusion or equivalent).
  1. Vagrant 1.5.4 (and below) - Install/upgrade vagrant-windows vagrant plugin. Open terminal/command line and type `vagrant plugin install vagrant-windows`
  1. Install/upgrade `sahara` vagrant plugin - `vagrant plugin install sahara`.
- 1. Find a Windows 2012 x64 vagrant basebox. [Atlas has some](https://atlas.hashicorp.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=windows) - If you have the VMWare plugin, you can take a look at [these](https://atlas.hashicorp.com/opentable/). Follow the instructions for what to update in the VagrantFile to take advantage of using that box. A couple of box choices have been added to the Vagrantfile in comments.
+ 1. Use the provided Atlas box or find a Windows 2012 x64 vagrant basebox. [Atlas has some](https://atlas.hashicorp.com/boxes/search?utf8=%E2%9C%93&sort=&provider=&q=windows) - If you have the VMWare plugin, you can take a look at [these](https://atlas.hashicorp.com/opentable/). Follow the instructions for what to update in the VagrantFile to take advantage of using that box. A couple of box choices have been added to the Vagrantfile in comments.
 
 ## Demo - Offline Setup
  1. Complete the steps above.
